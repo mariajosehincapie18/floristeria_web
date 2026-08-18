@@ -189,6 +189,7 @@ section > p {
 #catalogo{
     background-color: #ffffff;
 }
+h5{ text-align: center;}
 .catalogo-lista{
     display: grid;
     grid-template-columns: repeat(4,1fr);
