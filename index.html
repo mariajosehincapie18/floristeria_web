@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,21 +21,22 @@
 <main>
     <section id="inicio"> 
         <h2 id="titulo">Flores y detalles vicky</h2>
-            <img id="foto-familiar" src="imagenes/foto_familiar.jpeg" alt="foto familiar">     
+            <img id="foto-familiar" src="imagenes/foto_familiar.jpeg" alt="familia propietria de la floristeria">     
     
         <p>
           En Floristería Vicky creamos arreglos florales y detalles
             para acompañar tus momentos más especiales.  
         </p>
         <a href="#arreglos">Ver nuestros arreglos</a>
+    </section>
 
-        <section id="nosotros">
+    <section id="nosotros">
 
     <h2 id="sobre-floristeria">Sobre Floristería Vicky</h2>
 
     <p>
         Floristería Vicky es un negocio familiar con mas de 30 años de experiencia
-        dedicado a crear arreglos florales, Decoraciones, Detalles y eventos
+        dedicado a crear arreglos florales, decoraciones, detalles y eventos
         para acompañar los momentos más especiales de nuestros clientes.
     </p>
 
@@ -46,36 +47,45 @@
     </p>
 
     </section>
-    </section>
+    
 
 
    <section id="catalogo">
         <h2>Flores y detalles para cada Ocasion</h2>
-        <h5> CONECE NUSTRO CATALOGO</h5>
+
+        <p> CONOCE NUESTRO CATALOGO</p>
         <div class="catalogo-lista">
             <a href="#arreglos-florales">
             <article>
                 <h3>Arreglos Florales</h3>
-                <p> Contamos con todo tipo de arreglo florals </p>
+                <p> Ramos y arreglos florales para sorprender
+                en cualquier ocasión </p>
             </article>
             </a>
             <a href="#anchetas">
             <article>
                 <h3>Anchetas</h3>
-                <p> Arreglos con dulces, globos y flores</p>
+                <p>
+                Detalles con dulces, frutas, globos
+                y flores.
+            </p>
             </article>
             </a>
+
             <a href="#decoraciones">
             <article>
                 <h3>Decoraciones</h3>
-                <p>Matrimonios, quinces, primera comunion, cumpleaños 
+                <p>     
+                Decoraciones para matrimonios, quince años,
+                cumpleaños y celebraciones especiales.
                 </p>
             </article>
             </a>
             <a href="#comidas">
             <article>
                 <h3>Catering</h3>
-                <p>Todo tipo de cenas y catering </p>
+                <p> Cenas y opciones de catering para
+                compartir en ocasiones especiales</p>
             </article>
             </a>
         </div>
@@ -88,7 +98,7 @@
             Descubre algunas de nuestras opciones para sorprender
             a esa persona especial
         </p>
-        <h2 id="arreglos-florales">RAMOS Y ARREGLOS FLORALES </h2>
+        <h3 id="arreglos-florales">RAMOS Y ARREGLOS FLORALES </h3>
         <div class="productos"> 
            
             <article>
@@ -118,7 +128,7 @@
             </article>    
         </div>
 
-        <h2 id="anchetas">ANCHETAS</h2>
+        <h3 id="anchetas">ANCHETAS</h3>
         <div class="productos"> 
             <article>
                 <img  src="imagenes/anceta_frutas.jpg" alt="anchetas de frutas">
@@ -146,7 +156,7 @@
             </article>   
         </div>
 
-        <h2 id="decoraciones">DECORACIONES </h2>
+        <h3 id="decoraciones">DECORACIONES </h3>
         <div class="productos"> 
             <article>
                 <img  src="imagenes/d_primera_comunion.jpg" alt="decoracion primera comunion">
@@ -187,7 +197,7 @@
             </article>  
         </div>
 
-        <h2 id="comidas">COMIDAS </h2>
+        <h3 id="comidas">COMIDAS </h3>
         <div class="productos">
              <article>
                 <img  src="imagenes/cena_especial.jpeg" alt="cena especial">
@@ -238,7 +248,9 @@
             type="text"
             id="nombre"
             name="nombre"
-            placeholder="Escribe tu nombre">
+            placeholder="Escribe tu nombre"
+             required>
+            <p class="error" id="error-nombre"></p>
 
 
         <label for="correo">Correo electrónico:</label>
@@ -247,15 +259,17 @@
             type="email"
             id="correo"
             name="correo"
-            placeholder="Escribe tu correo">
+            placeholder="Escribe tu correo" required>
+            <p class="error" id="error-correo"></p>
 
         <label for="mensaje">Mensaje:</label>
 
         <textarea
             id="mensaje"
             name="mensaje"
-            placeholder="¿Qué arreglo estás buscando?">
+            placeholder="¿Qué arreglo estás buscando?" required>
         </textarea>
+        <p class="error" id="error-mensaje"></p>
 
         <button type="submit">
             Enviar mensaje
