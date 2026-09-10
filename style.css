@@ -136,7 +136,7 @@ section > p {
     color: #666;
 }
 #nosotros {
-    background-color: #ffffff;
+    background-color: var(--color-blanco);
 }
 #nosotros p{
     max-width: 800px;
@@ -145,7 +145,7 @@ section > p {
     color: #555;
 }
 #arreglos{
-    background-color: #fff5f8;
+    background-color: var(--color-fondo-suave);
 }
 .productos{
     display: grid;
@@ -196,7 +196,7 @@ section > p {
     padding: 0 20px 25px;
 }
 #catalogo{
-    background-color: #ffffff;
+    background-color: var(--color-blanco);
 }
 h5{ text-align: center;}
 .catalogo-lista{
@@ -224,7 +224,7 @@ h5{ text-align: center;}
     color: #666;
 }
 #contacto {
-    background-color: #fff5f8;
+    background-color: var(--color-fondo-suave);
 }
 #contacto > div {
     text-align: center;
@@ -277,7 +277,7 @@ h5{ text-align: center;}
     transform: translateY(-2px);
 }
 footer {
-    background-color: #7d3453;
+    background-color: var(--color-oscuro);
     color: white;
     text-align: center;
     padding: 40px 20px;
@@ -341,4 +341,11 @@ footer p {
 }
 #envianos-mesaje{
     text-align: center;
+}
+
+.error{
+   color: #c0392b;
+    font-size: 14px;
+    min-height: 20px;
+    text-align: left;
 }
