@@ -147,6 +147,27 @@ section > p {
 #arreglos{
     background-color: var(--color-fondo-suave);
 }
+#arreglos h3{
+     text-align: center;
+    color: #7d3453;
+    font-size: 28px;
+    margin: 40px 0 25px;
+}
+#arreglos > h3{
+    text-align: left;
+    color: var(--color-principal);
+    font-size: 36px;
+    margin: 55px auto 30px;
+    max-width: 1100px;
+    padding-left: 0;
+}
+.descripcion-categoria{
+    max-width: 1100px;
+    margin: -15px auto 30px;
+    color: var(--color-texto-suave);
+    font-size: 18px;
+    text-align: left;
+}
 .productos{
     display: grid;
     grid-template-columns: repeat(3,1fr);
