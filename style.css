@@ -154,7 +154,7 @@ section > p {
     margin: 40px 0 25px;
 }
 #arreglos > h3{
-    text-align: left;
+    text-align: center;
     color: var(--color-principal);
     font-size: 36px;
     margin: 55px auto 30px;
@@ -166,7 +166,7 @@ section > p {
     margin: -15px auto 30px;
     color: var(--color-texto-suave);
     font-size: 18px;
-    text-align: left;
+    text-align: center;
 }
 .productos{
     display: grid;
