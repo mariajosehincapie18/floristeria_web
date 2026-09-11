@@ -23,5 +23,19 @@ producto.addEventListener("click", function() {
     });
 
     console.log(productoSeleccionado);
+    document.getElementById("detalle-imagen").src = productoSeleccionado.imagen;
+    document.getElementById("detalle-imagen").alt = productoSeleccionado.nombre;
+
+    document.getElementById("detalle-categoria").textContent = productoSeleccionado.categoria;
+
+    document.getElementById("detalle-titulo").textContent = productoSeleccionado.nombre;
+
+    document.getElementById("detalle-descripcion").textContent = productoSeleccionado.descripcion;
+    console.log("Detalle encontrado:", document.getElementById("detalle-producto"));
+
+    document.getElementById("detalle-producto").style.display = "block";
+    document.getElementById("detalle-producto").scrollIntoView({
+    behavior: "smooth"
+});
 
 });
