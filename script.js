@@ -362,4 +362,18 @@ if (productoEncontrado) {
 
 botonWhatsapp.href = "https://wa.me/573148308537?text=" +
     encodeURIComponent("Hola, quisiera información sobre " + productoEncontrado.nombre);
+    
 }
+
+
+const formulario = document.getElementById("formulario-contacto");
+
+const nombre = document.getElementById("nombre");
+const correo = document.getElementById("correo");
+const mensaje = document.getElementById("mensaje");
+
+const errorNombre = document.getElementById("error-nombre");
+const errorCorreo = document.getElementById("error-correo");
+const errorMensaje = document.getElementById("error-mensaje");
+
+const mensajeExitoso = document.getElementById("mensaje-exitoso");
