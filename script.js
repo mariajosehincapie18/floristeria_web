@@ -377,3 +377,26 @@ const errorCorreo = document.getElementById("error-correo");
 const errorMensaje = document.getElementById("error-mensaje");
 
 const mensajeExitoso = document.getElementById("mensaje-exitoso");
+
+formulario.addEventListener("submit", function(evento) {
+    evento.preventDefault();
+    errorNombre.textContent = "";
+    errorCorreo.textContent = "";
+    mensajeExitoso.textContent = "";
+    if (nombre.value.trim() === "") {
+        errorNombre.textContent = "El nombre es obligatorio.";
+        return;
+    }
+    if (correo.value.trim() === "") {
+        errorCorreo.textContent = "El correo es obligatorio.";
+        return;
+    }
+const formatoCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if (!formatoCorreo.test(correo.value.trim())) {
+    errorCorreo.textContent = "Ingresa un correo válido.";
+    return;
+}
+    mensajeExitoso.textContent = "¡Formulario válido!";
+});
+
