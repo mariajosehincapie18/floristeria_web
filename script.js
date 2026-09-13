@@ -1,4 +1,5 @@
 console.log("JavaScript conectado correctamente");
+
 const productos = [
     {
         id: "ramo-margaritas",
@@ -13,29 +14,17 @@ const productos = [
         ]
     }
 ];
+
 const producto = document.querySelector(".producto");
-producto.addEventListener("click", function() {
 
-    const idProducto = producto.dataset.producto;
+if (producto) {
 
-    const productoSeleccionado = productos.find(function(producto) {
-        return producto.id === idProducto;
+    producto.addEventListener("click", function() {
+
+        const idProducto = producto.dataset.producto;
+
+        window.location.href = "detalle.html?producto=" + idProducto;
+
     });
 
-    console.log(productoSeleccionado);
-    document.getElementById("detalle-imagen").src = productoSeleccionado.imagen;
-    document.getElementById("detalle-imagen").alt = productoSeleccionado.nombre;
-
-    document.getElementById("detalle-categoria").textContent = productoSeleccionado.categoria;
-
-    document.getElementById("detalle-titulo").textContent = productoSeleccionado.nombre;
-
-    document.getElementById("detalle-descripcion").textContent = productoSeleccionado.descripcion;
-    console.log("Detalle encontrado:", document.getElementById("detalle-producto"));
-
-    document.getElementById("detalle-producto").style.display = "block";
-    document.getElementById("detalle-producto").scrollIntoView({
-    behavior: "smooth"
-});
-
-});
+}
