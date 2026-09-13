@@ -12,12 +12,76 @@ const productos = [
             "Elaborado de manera artesanal",
             "Ideal para regalar"
         ]
-    }
+    },
+    {
+    id: "ramo-margaritas-rosas",
+    nombre: "Ramo Grande Funebre",
+    categoria: "Ramos y arreglos florales",
+    imagen: "imagenes/ramo_grande_m.jpg",
+    descripcion: "Ramo floral de gran tamaño, elaborado como un detalle especial para acompañar momentos de despedida.",
+    caracteristicas: [
+        "Ramo de gran tamaño",
+        "Diseño floral",
+        "Elaborado de manera artesanal"
+    ]
+},
+
+{
+    id: "florero-rosas",
+    nombre: "Cilindro con Flores",
+    categoria: "Ramos y arreglos florales",
+    imagen: "imagenes/florero_rosas.jpg",
+    descripcion: "Arreglo floral presentado en un cilindro, una opción especial para regalar y decorar diferentes espacios.",
+    caracteristicas: [
+        "Flores de diferentes colores",
+        "Presentación en cilindro",
+        "Ideal para regalar"
+    ]
+},
+
+{
+    id: "florero-rosas-mariposas",
+    nombre: "Cilindro con Flores y Decoración",
+    categoria: "Ramos y arreglos florales",
+    imagen: "imagenes/florero_rosas_mariposas.jpg",
+    descripcion: "Arreglo floral presentado en un cilindro y acompañado de elementos decorativos que hacen de este un detalle especial.",
+    caracteristicas: [
+        "Flores frescas",
+        "Presentación en cilindro",
+        "Detalles decorativos"
+    ]
+},
+
+{
+    id: "ramo-jarron",
+    nombre: "Ramo en Base con Frutas",
+    categoria: "Ramos y arreglos florales",
+    imagen: "imagenes/ramo_jarron.jpeg",
+    descripcion: "Un detalle especial que combina un arreglo floral con frutas en una presentación decorativa.",
+    caracteristicas: [
+        "Arreglo floral",
+        "Incluye frutas",
+        "Presentación especial para regalo"
+    ]
+},
+
+{
+    id: "rosas-corazon",
+    nombre: "Arreglo de Rosas",
+    categoria: "Ramos y arreglos florales",
+    imagen: "imagenes/rosas_corazon.jpeg",
+    descripcion: "Arreglo elaborado con rosas, ideal para expresar sentimientos y sorprender en una ocasión especial.",
+    caracteristicas: [
+        "Rosas",
+        "Diseño floral",
+        "Ideal para regalar"
+    ]
+}
 ];
 
-const producto = document.querySelector(".producto");
+const productosCatalogo = document.querySelectorAll(".producto");
 
-if (producto) {
+productosCatalogo.forEach(function(producto) {
 
     producto.addEventListener("click", function() {
 
@@ -27,7 +91,7 @@ if (producto) {
 
     });
 
-}
+});
 
 const parametros = new URLSearchParams(window.location.search);
 
