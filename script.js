@@ -397,6 +397,15 @@ if (!formatoCorreo.test(correo.value.trim())) {
     errorCorreo.textContent = "Ingresa un correo válido.";
     return;
 }
-    mensajeExitoso.textContent = "¡Formulario válido!";
-});
+if (mensaje.value.trim() === "") {
+    errorMensaje.textContent = "El mensaje es obligatorio.";
+    return;
+}
 
+if (mensaje.value.trim().length < 10) {
+    errorMensaje.textContent = "El mensaje debe tener al menos 10 caracteres.";
+    return;
+}
+    mensajeExitoso.textContent = "¡Mensaje enviado!";
+    formulario.reset();
+});
