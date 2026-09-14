@@ -60,15 +60,15 @@ Para solucionarlo, se organizó la información de los productos y se hizo que l
 
 ### Vista en computador
 
-![Vista en computador](/imagenes/pag_principal_pc.png)
-![Vista en computador](/imagenes/pag_arreglos_pc.png)
-![Vista en computador](/imagenes/detalle_ramo_pc.png)
+![Vista en computador](imagenes/pag_principal_pc.png)
+![Vista en computador](imagenes/pag_arreglos_pc.png)
+![Vista en computador](imagenes/detalle_ramo_pc.png)
 
 
 
 
 ### Vista en celular
 
-![Vista en celular](/imagenes/portada_cel.jpeg)
-![Vista en celular](/imagenes/catalogo_Cel.jpeg)
-![Vista en celular](/imagenes/detalle_ramo_cel.jpeg)
+![Vista en celular](imagenes/portada_cel.jpeg)
+![Vista en celular](imagenes/catalogo_Cel.jpeg)
+![Vista en celular](imagenes/detalle_ramo_cel.jpeg)
