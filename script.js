@@ -328,6 +328,8 @@ const parametros = new URLSearchParams(window.location.search);
 
 const idProducto = parametros.get("producto");
 
+if (idProducto) {
+
 console.log("Producto de la URL:", idProducto);
 const productoEncontrado = productos.find(function(producto) {
     return producto.id === idProducto;
@@ -363,7 +365,7 @@ if (productoEncontrado) {
 botonWhatsapp.href = "https://wa.me/573148308537?text=" +
     encodeURIComponent("Hola, quisiera información sobre " + productoEncontrado.nombre);
     
-}
+}}
 
 
 const formulario = document.getElementById("formulario-contacto");

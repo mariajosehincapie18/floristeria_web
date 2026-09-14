@@ -332,9 +332,9 @@ footer p {
     .productos {
         grid-template-columns: 1fr;
     }
-    .ocasiones-lista {
-        grid-template-columns: 1fr;
-    }
+    .catalogo-lista {
+    grid-template-columns: 1fr;
+        }
     section {
         padding: 60px 6%;
     }
@@ -532,6 +532,47 @@ footer p {
         padding: 20px;
         box-shadow: 0 5px 10px rgba(0,0,0,0.1);
         z-index: 1000;
+    }
+
+}
+@media (max-width: 768px){
+
+    .detalle-contenedor{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .detalle-imagen{
+        width: 100%;
+    }
+
+    .detalle-imagen img{
+        height: 350px;
+    }
+
+    .detalle-informacion{
+        width: 100%;
+        padding: 10px;
+    }
+
+    #detalle-titulo{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    #detalle-categoria{
+        text-align: center;
+    }
+
+    #detalle-descripcion{
+        font-size: 16px;
+    }
+
+    #detalle-whatsapp{
+        display: block;
+        text-align: center;
+        width: fit-content;
+        margin: 10px auto;
     }
 
 }
