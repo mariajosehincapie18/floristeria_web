@@ -338,6 +338,14 @@ footer p {
     section {
         padding: 60px 6%;
     }
+    #boton-menu{
+    display: block;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: var(--color-principal);
+    cursor: pointer;
+}
 }
 
 #boton-whatsapp {
@@ -371,8 +379,6 @@ footer p {
     text-align: left;
 }
 
-
-/* DISEÑO DE LA PÁGINA DE DETALLE */
 
 #detalle-producto{
     background-color: var(--color-blanco);
@@ -477,4 +483,35 @@ footer p {
 
 #volver-catalogo:hover{
     transform: translateX(-5px);
+}
+
+#boton-menu{
+    display: none;
+}
+
+#boton-menu{
+    display: none;
+}
+
+@media (max-width: 768px){
+
+    #boton-menu{
+        display: block;
+        background: none;
+        border: none;
+        font-size: 28px;
+        color: var(--color-principal);
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header nav{
+        display: none;
+    }
 }

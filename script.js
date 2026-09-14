@@ -378,6 +378,7 @@ const errorMensaje = document.getElementById("error-mensaje");
 
 const mensajeExitoso = document.getElementById("mensaje-exitoso");
 
+if (formulario) {
 formulario.addEventListener("submit", function(evento) {
     evento.preventDefault();
     errorNombre.textContent = "";
@@ -408,4 +409,4 @@ if (mensaje.value.trim().length < 10) {
 }
     mensajeExitoso.textContent = "¡Mensaje enviado!";
     formulario.reset();
-});
+})};
