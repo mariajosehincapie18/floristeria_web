@@ -37,24 +37,29 @@ También se cuidó la distribución de las imágenes, los textos y los botones p
 
 ## Organización del contenido
 El catálogo está organizado por diferentes categorías para que los visitantes puedan encontrar fácilmente el tipo de producto que están buscando.
-Los productos se presentan de forma ordenada y cada uno puede abrirse para consultar información más detallada. También se buscó mantener una distribución sencilla y agradable para que las imágenes y la información se puedan visualizar fácilmente.
+
+Para organizar los productos utilicé Grid, ya que me permitió distribuir las tarjetas en varias columnas y hacer que se acomodaran dependiendo del tamaño de la pantalla.
+
+También utilicé Flexbox en algunas partes de la página, como el encabezado y la sección de detalle de los productos, porque me facilitó organizar los elementos y mantener una buena distribución cuando cambia el tamaño de la pantalla.
+
 
 
 ## JavaScript y formulario
+Utilicé JavaScript para agregar algunas funciones que hacen que la página sea más interactiva.
+Por ejemplo, se utiliza para abrir y cerrar el menú en la versión para celular y para que al seleccionar un producto se pueda consultar su información en una página de detalle.
 
-Se agregaron diferentes funciones para hacer la página más interactiva.
-El catálogo permite seleccionar un producto para ver su información con más detalle. También se agregó el menú desplegable para celulares.
-El formulario de contacto revisa que los campos estén completos, que el correo tenga un formato válido y que el mensaje tenga una cantidad mínima de caracteres. Si hay algún error, se muestra un mensaje junto al campo correspondiente.
+También lo utilicé en el formulario de contacto. Antes de aceptar la información, se revisa que los campos estén completos, que el correo tenga un formato válido y que el mensaje tenga mínimo 10 caracteres. Cuando algún dato no cumple con estas condiciones, aparece un mensaje indicando qué se debe corregir.
 
 
 ## Uso de inteligencia artificial
-Durante el desarrollo del proyecto se utilizó inteligencia artificial como apoyo para resolver dudas, organizar algunas ideas y revisar partes del código.
-Las sugerencias recibidas fueron revisadas y adaptadas al proyecto, realizando los cambios necesarios para que funcionaran de acuerdo con las necesidades de la página.
+Durante la realización del proyecto utilicé inteligencia artificial principalmente cuando tenía dudas sobre cómo realizar algunas funciones o cuando encontraba errores en el código.
+
+Me sirvió como una guía para entender mejor algunas partes de HTML, CSS y JavaScript. Después de recibir las sugerencias, las probé en mi proyecto y fui haciendo los cambios necesarios para que se adaptaran al diseño y a las funciones que quería implementar.
 
 ## Dificultad principal
+Una de las cosas que más me costó fue hacer que los productos del catálogo mostraran la información correcta en la página de detalle.
 
-Una de las principales dificultades fue lograr que cada producto del catálogo mostrara su información correspondiente en una misma página de detalle.
-Para solucionarlo, se organizó la información de los productos y se hizo que la página identificara cuál producto había seleccionado el visitante. De esta manera, se puede reutilizar la misma página para mostrar diferentes productos sin tener que crear una página diferente para cada uno.
+Para solucionarlo, organicé los productos con un identificador para que JavaScript pudiera reconocer cuál había seleccionado el usuario. Así pude utilizar una sola página de detalle para todos los productos, en lugar de crear una página diferente para cada uno.
 
 ## Capturas de pantalla
 
