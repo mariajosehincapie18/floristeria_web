@@ -410,3 +410,13 @@ if (mensaje.value.trim().length < 10) {
     mensajeExitoso.textContent = "¡Mensaje enviado!";
     formulario.reset();
 })};
+const botonMenu = document.getElementById("boton-menu");
+const menuNavegacion = document.getElementById("menu-navegacion");
+
+if (botonMenu && menuNavegacion) {
+
+    botonMenu.addEventListener("click", function() {
+        menuNavegacion.classList.toggle("menu-abierto");
+    });
+
+}
